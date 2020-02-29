@@ -3,14 +3,36 @@
 <head>
   <meta charset="utf-8">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="test.js"></script>
+  <script src="shell.js"></script>
 </head>
+<style>
+  .shell{
+    background-color: black;
+    height: 53vh;
+    position: relative;
+    color: white;
+  }
+  .bottom{
+    position: absolute; 
+                bottom: 0; 
+  }
+  .prompt{
+    color: #37B019;
+    font-weight: bold;
+  }
+  .text{
+    color: white;
+    font-weight: normal;
+  }
+</style>
 <body>
+  <div class="shell">
     <div id="response" style="max-height: 50vh; overflow: auto;"></div>
-    <form action="#" onsubmit="getCmd();return false">
-      <label for="cmd" id="cmdLabel" style="color: red;">$</label>
+    <form action="#" onsubmit="getCmd();return false" class="bottom">
+      <label for="cmd" id="cmdLabel" class="prompt">$</label>
       <input type="text" id="cmd">
       <button type="submit" style="display: none;">exec</button>
     </form>
+  </div>
 </body>
 </html>
