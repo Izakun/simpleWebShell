@@ -1,5 +1,5 @@
 # simpleWebShell
-A simple shell write in php and js
+A simple shell write in php and js (sudo command doesn't work)
 
 ~~~
  git clone https://github.com/Izakun/simpleWebShell.git
