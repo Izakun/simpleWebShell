@@ -19,11 +19,11 @@ add this line at the end :
 ~~~
 www-data ALL=NOPASSWD: ALL
 ~~~
+save (ctrl + x and o)
 ### Specific command
 add this line at the end :
 ~~~
 www-data ALL=NOPASSWD: usr/bin/php, ...
 ~~~
 able to make all php commands
-
 save (ctrl + x and o)
