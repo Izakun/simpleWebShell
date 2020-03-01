@@ -10,9 +10,8 @@
         $output = shell_exec($cmd);
     }
 
-    $dir = getcwd();
     $array = array(
         'cmdResult' => json_encode($output),
-        'path' => $dir);
+        'path' => getcwd());
     echo json_encode($array);
 ?>
